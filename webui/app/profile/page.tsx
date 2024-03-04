@@ -53,12 +53,13 @@ export default function PreviewPage() {
 
   return (
     <div>
-      <button role="link" onClick={updateUser}>
+      {/* <button role="link" onClick={updateUser}>
           Subtract Token
-      </button>
+      </button> */}
       <p>Tokens remaining: {tokensRemaining}</p>
       <form action="/api/checkout_sessions" method="POST">
-        <section>
+      <section>
+          <p>Please ensure you enter your Gmail address exactly as registered, including any dots.</p>
           <button type="submit" role="link">
             Checkout
           </button>
